@@ -27,7 +27,7 @@ This project provides a utility to reorder the actors in the pre-generated`.nfo`
    - Type `pip --version` and press Enter to confirm that pip, Python’s package installer, is installed correctly. On macOS, you might need to use `pip3 --version`.
 
 3. **Download the Project**:
-   - Clone or download this repository to your local machine. If you are unfamiliar with how to clone a repository, visit GitHub's guide on [Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+   - Clone or download this repository to your local machine. If you are unfamiliar with how to clone a repository, visit GitHub's guide on [Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). Or, you can simply click the green "Code" button in the repo and select "Download as Zip" to download it directly; be sure to unzip the files before attempting to use the tool if you download this way.
 
 ### Windows Users:
 4. **Prepare to Run the Application**:
