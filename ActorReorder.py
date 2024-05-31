@@ -26,7 +26,7 @@ def reorder_actors(file_path):
             print(f"{index}: {name} as {role}")
 
         print()  # Add an empty line for spacing
-        order_input = input("Enter the new order of actors by numbers separated by spaces (e.g., '5 6 4 8 2' or just '5 6 4' to partially re-order), or press Enter to skip this file: ")
+        order_input = input("Enter the preferred order of actors using numbers separated by spaces (e.g., '5 6 4 8 2' or just '5 6 4' to partially re-order), or press Enter to skip this file: ")
         if not order_input.strip():  # Check if input is empty to skip
             print("Skipping file, no changes made.")
             break
@@ -74,7 +74,7 @@ def main():
 
     media_type_question = [
         inquirer.Checkbox('media_type',
-                          message="Select the media type the directory contains (must select at least one):",
+                          message="Using your arrow keys and space bar, select the media type the directory contains and press enter (must select at least one):",
                           choices=['TV Shows', 'Movies'],
                           default=[])
     ]
