@@ -15,6 +15,9 @@ call venv\Scripts\activate
 echo Installing required dependencies...
 pip install -r requirements.txt
 
+:: Add 30 blank lines for visual space
+for /L %%i in (1,1,30) do echo.
+
 :: Run the Python script
 echo Running the script...
 python ActorReorder.py
