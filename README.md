@@ -62,7 +62,7 @@ Run the `RunActorReorder.bat` file by double-clicking on it. This batch file aut
   - Locks the data after reordering to prevent other processes from overwriting the changes.
 - **Deactivates the Virtual Environment**: After running the script, it deactivates the environment and returns to the original state.
 
-### Mac Users:
+### Mac/Linux Users:
 Run the `ActorReorder.sh` script by using the Terminal. This  shell script automates the setup and execution process similarly to the Windows batch file:
 - **Navigate to the Script Location**: Open Terminal and change to the directory where `ActorReorder.sh` is located.
 - **Run the Script**: Execute the script by typing `./ActorReorder.sh`. You may need to ensure the script is executable by running `chmod +x ActorReorder.sh` if you haven't done so already.
