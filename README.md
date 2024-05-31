@@ -34,7 +34,7 @@ This project provides a utility to reorder the actors in the pre-generated`.nfo`
    - Locate the `RunActorReorder.bat` file within the downloaded project files.
    - Double-click the `RunActorReorder.bat` file to start the application. This batch file will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script. This file streamlines the process by managing Python virtual environments and dependencies, allowing you to run the application with just a double-click.
 
-### Mac Users:
+### Mac/Linux Users:
 4. **Prepare to Run the Application**:
    - Locate the `ActorReorder.sh` file within the downloaded project files.
    - Open Terminal and navigate to the directory containing `ActorReorder.sh`.
