@@ -19,7 +19,7 @@ This project provides a utility to reorder the actors in the pre-generated`.nfo`
 1. **Install Python**:
    - Visit the official Python website: [Download Python](https://www.python.org/downloads/).
    - Choose the version appropriate for your operating system and download the installer.
-   - Run the installer. Ensure to check the box that says "Add Python to PATH" at the beginning of the installation process on Windows. This step makes Python and pip accessible from the command line.
+   - Run the installer. **Ensure to check the box that says "Add Python to PATH" at the beginning of the installation process on Windows.** This step makes Python and pip accessible from the command line.
 
 2. **Verify Python and pip Installation**:
    - Open your command line interface (CLI), which could be Command Prompt on Windows or Terminal on macOS.
