@@ -1,7 +1,7 @@
 # Emby Actor Reorder Tool
 
 ## Description 
-This project provides a utility to reorder how the actors are displayed in the pre-generated`.nfo` files created by Emby. It features a user-friendly interface that allows users to point to their Emby library and specify a new order for the actors being displayed in that library, supporting both full and partial reordering for both TV Shows and Movies.
+This project provides a utility to reorder how the actors are displayed in the pre-generated`.nfo` files created by Emby. It features a user-friendly interface that allows users to point to their Emby library and specify a new order for the actors being displayed in that media, supporting both full and partial reordering for TV Shows and Movies.
 
 ## Table of Contents
 - [Installation](#installation)
