@@ -14,36 +14,68 @@ This project provides a utility to reorder the actors in the pre-generated`.nfo`
 - [Questions](#questions)
 
 ## Installation
+
+### All Users:
 1. **Install Python**:
    - Visit the official Python website: [Download Python](https://www.python.org/downloads/).
    - Choose the version appropriate for your operating system and download the installer.
-   - Run the installer. Make sure to check the box that says "Add Python to PATH" at the beginning of the installation process. This step makes Python and pip accessible from the command line.
+   - Run the installer. Ensure to check the box that says "Add Python to PATH" at the beginning of the installation process on Windows. This step makes Python and pip accessible from the command line.
 
 2. **Verify Python and pip Installation**:
-   - Open your command line interface (CLI), which could be Command Prompt on Windows.
-   - Type `python --version` and press Enter to ensure Python was installed correctly.
-   - Type `pip --version` and press Enter to confirm that pip, Python’s package installer, is installed correctly.
+   - Open your command line interface (CLI), which could be Command Prompt on Windows or Terminal on macOS.
+   - Type `python --version` and press Enter to ensure Python was installed correctly. If necessary, use `python3 --version` especially on macOS.
+   - Type `pip --version` and press Enter to confirm that pip, Python’s package installer, is installed correctly. On macOS, you might need to use `pip3 --version`.
 
 3. **Download the Project**:
    - Clone or download this repository to your local machine. If you are unfamiliar with how to clone a repository, visit GitHub's guide on [Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
+### Windows Users:
 4. **Prepare to Run the Application**:
    - Locate the `RunActorReorder.bat` file within the downloaded project files.
-   - Double-click the `RunActorReorder.bat` file to start the application. This batch file will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script.
+   - Double-click the `RunActorReorder.bat` file to start the application. This batch file will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script. This file streamlines the process by managing Python virtual environments and dependencies, allowing you to run the application with just a double-click.
 
-The `.bat` file streamlines the process by managing Python virtual environments and dependencies, allowing you to run the application with just a double-click.
+### Mac Users:
+4. **Prepare to Run the Application**:
+   - Locate the `ActorReorder.sh` file within the downloaded project files.
+   - Open Terminal and navigate to the directory containing `ActorReorder.sh`.
+   - Before running the script for the first time, you need to make it executable. Type the following command in Terminal:
+     ```
+     chmod +x ActorReorder.sh
+     ```
+   - To run the script, type the following command in Terminal:
+     ```
+     ./ActorReorder.sh
+     ```
+   - This script will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script, similar to the batch file on Windows.
 
-## Usage 
+## Usage
+
+### Windows Users:
 Run the `RunActorReorder.bat` file by double-clicking on it. This batch file automates the setup and execution process, ensuring a smooth operation:
 - **Checks for an Existing Virtual Environment**: If not present, it creates one to isolate dependency installations from the global Python environment.
 - **Activates the Virtual Environment**: Ensures all commands and packages are run within this isolated environment.
 - **Installs Required Packages**: Automatically installs all necessary Python packages from `requirements.txt` to ensure that all dependencies needed by the script are available within the virtual environment.
 - **Runs the Python Script**: Executes the script that:
   - Asks for the file directory containing your `.nfo` files. (e.g., `C:\Users\thomw\Desktop\tvshows`)
-  - Allows you to reorder the actors listed in each and every `tvshow.nfo` file found in the given directory.
+  - Allows you to reorder the actors listed in each `tvshow.nfo` file found in the given directory.
   - Optionally lets you provide full or partial reordering.
   - Locks the data after reordering to prevent other processes from overwriting the changes.
 - **Deactivates the Virtual Environment**: After running the script, it deactivates the environment and returns to the original state.
+
+### Mac Users:
+Run the `ActorReorder.sh` script by using the Terminal. This  shell script automates the setup and execution process similarly to the Windows batch file:
+- **Navigate to the Script Location**: Open Terminal and change to the directory where `ActorReorder.sh` is located.
+- **Run the Script**: Execute the script by typing `./ActorReorder.sh`. You may need to ensure the script is executable by running `chmod +x ActorReorder.sh` if you haven't done so already.
+- **Script Operations**:
+  - **Checks for an Existing Virtual Environment**: Creates one if it doesn’t exist to ensure all dependencies are managed separately.
+  - **Activates the Virtual Environment**: All commands and package installations are performed within this controlled environment.
+  - **Installs Required Packages**: Dependencies listed in `requirements.txt` are installed to meet the script's requirements.
+  - **Runs the Python Script**: The script prompts you to:
+    - Specify the directory containing your `.nfo` files. (e.g., `/Users/thomw/Desktop/tvshows`)
+    - Reorder the actors as listed in each `tvshow.nfo` file found.
+    - Optionally, provide full or partial reordering.
+    - Ensures data is locked after modifications to avoid overwriting by other processes.
+- **Deactivates the Virtual Environment**: The script deactivates the environment upon completion to restore the system to its original configuration.
 
 ## Known Issues
 **Microsoft Defender SmartScreen Warning**:
