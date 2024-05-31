@@ -45,6 +45,11 @@ Run the `RunActorReorder.bat` file by double-clicking on it. This batch file aut
   - Locks the data after reordering to prevent other processes from overwriting the changes.
 - **Deactivates the Virtual Environment**: After running the script, it deactivates the environment and returns to the original state.
 
+## Known Issues
+**Microsoft Defender SmartScreen Warning**:
+- **Issue**: When running the `RunActorReorder.bat` file for the first time, Windows Defender SmartScreen may display a warning saying, "Windows protected your PC" and prevent the app from starting, citing an "Unknown publisher."
+- **Resolution**: Click on "More info" then choose "Run anyway" to proceed with running the script. This warning occurs because the script is unrecognized by Microsoft's security services. Uusing the "Run anyway" option will allow you to bypass this security check.
+
 ## Credits
 Developed by Thomas Wollin
 
