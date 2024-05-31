@@ -57,7 +57,7 @@ Run the `RunActorReorder.bat` file by double-clicking on it. This batch file aut
 - **Installs Required Packages**: Automatically installs all necessary Python packages from `requirements.txt` to ensure that all dependencies needed by the script are available within the virtual environment.
 - **Runs the Python Script**: Executes the script that:
   - Asks for the file directory containing your `.nfo` files. (e.g., `C:\Users\thomw\Desktop\tvshows`)
-  - Allows you to reorder the actors listed in each `tvshow.nfo` file found in the given directory.
+  - Allows you to reorder the actors listed in each `.nfo` file found in the given directory.
   - Optionally lets you provide full or partial reordering.
   - Locks the data after reordering to prevent other processes from overwriting the changes.
 - **Deactivates the Virtual Environment**: After running the script, it deactivates the environment and returns to the original state.
@@ -72,7 +72,7 @@ Run the `ActorReorder.sh` script by using the Terminal. This  shell script autom
   - **Installs Required Packages**: Dependencies listed in `requirements.txt` are installed to meet the script's requirements.
   - **Runs the Python Script**: The script prompts you to:
     - Specify the directory containing your `.nfo` files. (e.g., `/Users/thomw/Desktop/tvshows`)
-    - Reorder the actors as listed in each `tvshow.nfo` file found.
+    - Reorder the actors as listed in each `.nfo` file found.
     - Optionally, provide full or partial reordering.
     - Ensures data is locked after modifications to avoid overwriting by other processes.
 - **Deactivates the Virtual Environment**: The script deactivates the environment upon completion to restore the system to its original configuration.
