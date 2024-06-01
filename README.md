@@ -31,8 +31,8 @@ This project provides a utility to reorder how the actors are displayed in the p
 
 ### Windows Users:
 4. **Prepare to Run the Application**:
-   - Locate the `RunActorReorder.bat` file within the downloaded project files.
-   - Double-click the `RunActorReorder.bat` file to start the application. This batch file will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script. This file streamlines the process by managing Python virtual environments and dependencies, allowing you to run the application with just a double-click.
+   - Locate the `ActorReorder.bat` file within the downloaded project files.
+   - Double-click the `ActorReorder.bat` file to start the application. This batch file will handle the creation of a virtual environment, activate it, install necessary dependencies from `requirements.txt`, and run the script. This file streamlines the process by managing Python virtual environments and dependencies, allowing you to start the application with a simple double-click.
 
 ### Mac/Linux Users:
 4. **Prepare to Run the Application**:
@@ -51,7 +51,7 @@ This project provides a utility to reorder how the actors are displayed in the p
 ## Usage
 
 ### Windows Users:
-Run the `RunActorReorder.bat` file by double-clicking on it. This batch file automates the setup and execution process, ensuring a smooth operation:
+Run the `ActorReorder.bat` file by double-clicking on it. This batch file automates the setup and execution process, ensuring a smooth operation:
 - **Checks for an Existing Virtual Environment**: If not present, it creates one to isolate dependency installations from the global Python environment.
 - **Activates the Virtual Environment**: Ensures all commands and packages are run within this isolated environment.
 - **Installs Required Packages**: Automatically installs all necessary Python packages from `requirements.txt` to ensure that all dependencies needed by the script are available within the virtual environment.
@@ -79,8 +79,8 @@ Run the `ActorReorder.sh` script by using the Terminal. This  shell script autom
 
 ## Known Issues
 **Microsoft Defender SmartScreen Warning**:
-- **Issue**: When running the `RunActorReorder.bat` file for the first time, Windows Defender SmartScreen may display a warning saying, "Windows protected your PC" and prevent the app from starting, citing an "Unknown publisher."
-- **Resolution**: Click on "More info" then choose "Run anyway" to proceed with running the script. This warning occurs because the script is unrecognized by Microsoft's security services. Uusing the "Run anyway" option will allow you to bypass this security check.
+- **Issue**: When running the `ActorReorder.bat` file for the first time, Windows Defender SmartScreen may display a warning saying, "Windows protected your PC" and prevent the app from starting, citing an "Unknown publisher."
+- **Resolution**: Click on "More info" then scroll to the far right and choose "Run anyway" to proceed with running the script. This warning occurs because the script is unrecognized by Microsoft's security services. Using the "Run anyway" option will allow you to ovveride this security check.
 
 ## Credits
 Developed by Thomas Wollin
